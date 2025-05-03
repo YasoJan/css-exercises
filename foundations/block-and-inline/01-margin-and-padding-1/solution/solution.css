@@ -24,5 +24,7 @@ body {
   width: 200px;
   /* CHANGE ME */
   padding: 32px;
+  /* so margin-left: auto pushes things far to the right side of the screen all the way until theres no more whitespace to be had on the left
+  And because parent width is 600px it moves to the edge of 600 width */
   margin-left: auto;
 }
