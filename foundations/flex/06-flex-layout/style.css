@@ -5,6 +5,9 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 img {
@@ -23,4 +26,88 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+/*
+- The header is at the top of the page, the footer is at the bottom, and they stay in place if you resize your screen.
+- The header and footer have padding.
+- The links in the header and footer are pushed to either side.
+- There is space between the links in the header and footer.
+- The footer has a light gray background (`#eeeeee`).
+- The logo, input and buttons are centered in the screen.
+- The buttons have an appropriate amount of padding.
+- There is space between the logo, input and buttons.
+
+*/
+
+.header{
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.header > ul{
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  list-style: none;
+
+}
+.header > .left-links{
+  padding-left: 50px;
+}
+.header > .right-links{
+  padding-right: 50px;
+}
+a{
+  text-decoration: none;
+
+  display: flex;
+  color: grey;
+}
+.content{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: space-between;
+}
+.footer{
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+
+}
+
+.footer > ul{
+  display: flex;
+  list-style: none;
+
+  gap: 20px;
+  padding: 0;
+}
+
+.footer > .left-links{
+  padding-left: 50px;
+}
+
+.footer > .right-links{
+  padding-right: 50px;
 }
